@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>coin flip</title>
+  </head>
+  <body>
+    <button onclick="
+       const generatedValue = Math.random();
+
+      let result = '';
+      let guess='heads';
+
+      generatedValue < 0.5 ?  result = 'tails' : result = 'heads';
+      result === 'heads' ? alert('You win') : alert('You lose') ;
+
+      /*
+      let result = '';
+      if (generatedValue < 0.5) {
+        result = 'tails';
+      } else {
+        result = 'heads';
+      }
+
+      let guess='heads';
+
+      if (result === 'heads') {
+        alert('You win');
+      } else {
+        alert('You lose');
+      }
+      */
+      ">heads</button>
+
+    <button onclick="
+      const generatedValue = Math.random();
+
+      let result = '';
+      guess='tails';
+      generatedValue < 0.5 ? result = 'tails' : result = 'heads';
+      result === 'tails' ? alert('You win') : alert('You lose');
+       
+      /*
+      let result = '';
+      if (generatedValue < 0.5) {
+        result = 'tails';
+      } else {
+        result = 'heads';
+      }
+
+      let guess='tails';
+
+      if (result === 'tails') {
+        alert('You win');
+      } else {
+        alert('You lose');
+      }
+      */
+    ">tails</button>
+
+  </body>
+</html>
